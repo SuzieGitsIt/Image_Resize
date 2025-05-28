@@ -1,0 +1,19 @@
+from tkinter import *                                       # Tkinter's Tk class   
+from tkinter.ttk import *                                   # Tkinter's Tkk class
+from PIL import ImageTk, Image                              # Displaying background photo
+
+GUI = Tk()
+GUI.title("Canvas")
+
+canvas = Canvas(GUI, width=11000, height=7800)
+
+coord = 10, 50, 240, 210
+arc = canvas.create_arc(coord, start=0, extent=150, fill="blue")
+
+line = canvas.create_line(50, 50, 50, 50, 50, 50, fill="red")
+
+oval = canvas.create_oval(100, 100, 50, 50, fill="red")
+
+GUI.mainloop()
+
+
